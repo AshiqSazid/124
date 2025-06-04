@@ -1,4 +1,4 @@
-from moodsinger_backend.moodsinger.moodsinger.celery import shared_task
+from celery import shared_task
 from apps.music.models import Song
 from .models import SongAnalysis
 from .viral_analyzer import ViralSongAnalyzer
