@@ -1,9 +1,9 @@
 import axios from 'axios';
 import secureLocalStorage from 'react-secure-storage';
 const base = axios.create({
-	//  baseURL: "https://home.moodsinger.com/api",
-	baseURL: 'http://localhost:3000/api',
-	// baseURL: "https://api.home.moodsinger.com/api"
+        //  baseURL: "https://home.moodsinger.com/api",
+        baseURL: 'http://localhost:8000/api',
+        // baseURL: "https://api.home.moodsinger.com/api"
 });
 
 // Request interceptor
