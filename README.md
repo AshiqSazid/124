@@ -2,7 +2,15 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, run the development servers.
+
+Start the Django backend:
+
+```bash
+python manage.py runserver 8000
+```
+
+Then, in another terminal, launch the Next.js app:
 
 ```bash
 npm run dev
@@ -14,7 +22,8 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Next.js server runs on [http://localhost:3001](http://localhost:3001) by default and expects the Django API at [http://localhost:8000/api](http://localhost:8000/api).
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
